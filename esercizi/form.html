@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form spedizione</title>
+</head>
+<body>
+
+<table>
+
+    <form id="delivery" autocomplete="on">
+        <tr>
+            <td><label for="name">Nome*</label></td>
+            <td>
+
+                <input id="name" type="text" name="name" placeholder="Nome" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="lastname">Cognome*</label></td>
+            <td>
+
+                <input id="lastname" type="text" name="name" placeholder="Cognome" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address">Indirizzo*</label></td>
+            <td>
+
+                <input id="address" type="text" name="address" placeholder="Indirizzo" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="po">Civico</label></td>
+            <td>
+
+                <input type="number" name="po" id="po" placeholder="123">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="cap">Cap*</label></td>
+            <td>
+
+                <input type="numbet" name="cap" id="cap" placeholder="0000" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="province">Provincia*</label></td>
+            <td>
+
+                <select name="province" id="province" required>
+                    <option value="MI">Milano</option>
+                    <option value="TO">Torino</option>
+                    <option value="RO">Roma</option>
+                    <option value="OTHER" selected>Altro</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="city">Città*</label></td>
+            <td>
+
+                <input type="text" name="city" id="city" placeholder="Milano" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="country">Nazione*</label></td>
+            <td>
+
+                <input type="text" name="country" id="country" placeholder="Italia" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="phone">Telefono</label></td>
+            <td>
+
+                <input type="tel" name="phone" id="phone" placeholder="333 1234567">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Email*</label></td>
+            <td>
+
+                <input type="email" name="email" id="email" placeholder="tua@mail.it" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="note">Note</label></td>
+            <td>
+
+                <textarea name="note" id="note" cols="30" rows="10" placeholder="Note"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Invia">
+            </td>
+        </tr>
+
+    </form>
+
+</table>
+
+<button type="reset" form="delivery">Reset</button>
+</body>
+</html>
